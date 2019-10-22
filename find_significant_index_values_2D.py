@@ -121,7 +121,7 @@ for dataset_id in range(0, len(dataset_name)):
 			x_Nclustered.append(x_i)
 			y_Nclustered.append(y_i)
 
-    print 'number of signficantly clustered points:', len(x_clustered), '/', len(x_dat)
+    	print 'number of signficantly clustered points:', len(x_clustered), '/', len(x_dat)
 
 	fig=plt.figure()
 	ax = plt.gca()

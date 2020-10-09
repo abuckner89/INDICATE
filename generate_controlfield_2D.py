@@ -128,11 +128,11 @@ for dataset_id in range(0, len(dataset_name)):
 
 	#y-ayis corridnates
 	heights=[]
-	y_current=(left_edge-0.5*height)+(0.5*length_den_height)
-	y_stop=(right_edge+0.5*height)-(0.5*length_den_height)
+	y_current=(bottom_edge-0.5*height)+(0.5*length_den_height)
+	y_stop=(top_edge+0.5*height)-(0.5*length_den_height)
 	while (y_current <= y_stop):
 
-		if ((y_current>=(left_edge-0.5*height)-length_den_height) and (y_current<=(right_edge+0.5*height)+length_den_height)):
+		if ((y_current>=(bottom_edge-0.5*height)-length_den_height) and (y_current<=(top_edge+0.5*height)+length_den_height)):
 			heights.append(y_current)
 		y_current=y_current+length_den_height
 

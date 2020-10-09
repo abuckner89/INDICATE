@@ -126,7 +126,7 @@ for dataset_id in range(0, len(dataset_name)):
 	y_current=(ymin_edge-0.5*height)+(0.5*length_den_height)
 	y_stop=(ymax_edge+0.5*height)-(0.5*length_den_height)
 	while (y_current <= y_stop):
-		if ((y_current>=(ymax_edge-0.5*height)-length_den_height) and (y_current<=(ymax_edge+0.5*height)+length_den_height)):
+		if ((y_current>=(ymin_edge-0.5*height)-length_den_height) and (y_current<=(ymax_edge+0.5*height)+length_den_height)):
 			heights.append(y_current)
 		y_current=y_current+length_den_height
 
@@ -136,7 +136,7 @@ for dataset_id in range(0, len(dataset_name)):
 	z_current=(zmin_edge-0.5*depth)+(0.5*length_den_depth)
 	z_stop=(zmax_edge+0.5*depth)-(0.5*length_den_depth)
 	while (z_current <= z_stop):
-		if ((z_current>=(zmax_edge-0.5*depth)-length_den_depth) and (z_current<=(zmax_edge+0.5*depth)+length_den_depth)):
+		if ((z_current>=(zmin_edge-0.5*depth)-length_den_depth) and (z_current<=(zmax_edge+0.5*depth)+length_den_depth)):
 			depths.append(z_current)
 		z_current=z_current+length_den_depth
 
